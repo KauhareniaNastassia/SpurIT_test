@@ -1,0 +1,145 @@
+.container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #F5F5F5;
+}
+
+.title {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+   /* display: flex;
+    align-items: center;
+    text-align: center;
+    нужно ли это, из фигмы*/
+}
+
+.products {
+    list-style-type: none;
+    display: flex;
+    padding: 0 5px;
+}
+
+.product {
+    margin: 0 5px;
+    width: 380px;
+    min-height: 482px;
+    left: 370px;
+    top: 152px;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+    border-radius: 12px;
+    flex-wrap: wrap;
+}
+
+.product__image {
+    height: 213.75px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+product__image1 {
+    background-image: url("Image.jpg");
+    height: 213.75px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    /*border-top-left-radius: 12px;
+    border-top-right-radius: 12px;*/
+}
+
+.product__chips {
+    margin-left: 16px;
+    margin-top: 16px;
+    padding: 4px 16px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F2F2F;
+}
+
+.product__chips_pink {
+    background: #FDCFF3;
+    border-radius: 8px;
+}
+
+.product__chips_orange {
+    background: #FFCF56;
+    border-radius: 8px;
+}
+
+.product__title {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2F2F2F;
+    margin: 24px 24px 16px 24px;
+}
+
+.product__description {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F2F2F;
+    margin: 0px 24px;
+    /*не правильней ли сделать какой-то мини контейнер для тайтла,
+    дескрипшена и кнопки, чтоб не писать марджины*/
+}
+
+.product__button {
+    min-height: 48px;
+    min-width: 332px;
+    border-radius: 8px;
+    display: flex;
+    margin: 0 auto;
+    display: block;
+    /*как опустить кнопку вниз блока*/
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    /*нужно ли как-то разделить общие стили баттона и текст*/
+}
+
+.product__button_disabled {
+    background: #4E4E4E;
+    border: 1px solid #4E4E4E;
+    color: white;
+}
+
+.product__button_active {
+    border: 2px solid #42940F;
+    background-color: white;
+    color: #42940F;
+}
+
+.product__button_active:hover {
+    background: #42940F;
+    color: white;
+}
+
+.product__button_active:active {
+    background: #1F5200;
+    border: 2px solid #1F5200;
+    color: white;
+}
