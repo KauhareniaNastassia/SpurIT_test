@@ -35,6 +35,10 @@
     box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
     border-radius: 12px;
     padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .product__image {
@@ -48,10 +52,15 @@
 }
 
 .product__chips {
-    margin-left: 16px;
-    margin-top: 16px;
-    padding: 4px 16px;
+    position: relative;
+    top: 16px;
+}
 
+.product__chip {
+    margin-left: 16px;
+    padding: 4px 16px;
+    height: 24px;
+    border-radius: 8px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
@@ -60,14 +69,12 @@
     color: #2F2F2F;
 }
 
-.product__chips_pink {
+.product__chip_pink {
     background: #FDCFF3;
-    border-radius: 8px;
 }
 
-.product__chips_orange {
+.product__chip_orange {
     background: #FFCF56;
-    border-radius: 8px;
 }
 
 .product__title {
@@ -87,7 +94,11 @@
     font-size: 16px;
     line-height: 24px;
     color: #2F2F2F;
-    margin: 0px 24px;
+    margin: 0px 24px ;
+}
+
+.product__information {
+    margin-bottom: 24px;
 }
 
 .product__button {
@@ -96,8 +107,6 @@
     border-radius: 8px;
     margin: 0 auto;
     display: block;
-    /*как опустить кнопку вниз блока*/
-
     font-family: 'Arial';
     font-style: normal;
     font-weight: 900;
