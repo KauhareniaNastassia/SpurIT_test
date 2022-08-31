@@ -7,7 +7,7 @@ let hidden = document.querySelector(".collapsible__action--hidden")
 let hide = '';
 
 let options = {
-    duration: 0,
+    duration: 1000,
     fill: 'forwards'
 };
 
@@ -21,6 +21,7 @@ let hideBlock = [
     {opacity: 0},
 ];
 
+hidden.style.opacity = '0'
 
 actionHideAndShow.addEventListener("click", function () {
     if (hide) {
